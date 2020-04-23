@@ -20,7 +20,7 @@ export default class End extends Phaser.Scene {
     this.centerY = this.cameras.main.height / 2;
 
     //load musics
-    this.load.audio("music", ["assets/sounds/sci-fi_platformer12.ogg", "assets/sounds/sci-fi_platormer12.mp3"]);
+    //this.load.audio("music", ["assets/sounds/sci-fi_platformer12.ogg", "assets/sounds/sci-fi_platormer12.mp3"]);
   }
 
   create (data) {
@@ -61,19 +61,19 @@ export default class End extends Phaser.Scene {
     this.enter = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
 
     //create music
-    this.music = this.sound.add("music");
+    //this.music = this.sound.add("music");
 
-    var musicConfig = {
-      mute: false,
-      volume: 1,
-      rate: 1,
-      detune: 0,
-      seek: 0,
-      loop: true,
-      delay: 0
-    }
+    //var musicConfig = {
+      //mute: false,
+      //volume: 1,
+      //rate: 1,
+      //detune: 0,
+    //  seek: 0,
+    //  loop: true,
+    //  delay: 0
+  //  }
 
-    this.music.play(musicConfig);
+    //this.music.play(musicConfig);
 
 }
 

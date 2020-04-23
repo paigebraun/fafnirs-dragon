@@ -7,12 +7,12 @@ export default class Level02 extends Phaser.Scene {
   init (data) {
     // Initialization code goes here
     if (data != null) {
-      this.scores = data.score;  
+      this.scores = data.score;
       console.log(this.scores);
     } else {
       this.scores = 0;
     }
-    
+
   }
 
   preload () {
@@ -25,7 +25,7 @@ export default class Level02 extends Phaser.Scene {
       frameHeight: 93,
       frameWidth: 67
     });
-    
+
     // Declare variables for center of the scene
     this.centerX = this.cameras.main.width / 2;
     this.centerY = this.cameras.main.height / 2;
@@ -79,11 +79,11 @@ export default class Level02 extends Phaser.Scene {
 
     //Create platforms
     var platforms = this.physics.add.staticGroup();
-    
+
     platforms.refresh();
 
     platforms
-      .create(250, 700, 'platform')  
+      .create(250, 700, 'platform')
       .setSize(400, 20)
       .setDisplaySize(400, 20);
 
@@ -95,7 +95,7 @@ export default class Level02 extends Phaser.Scene {
       var random = Math.random();
       if (random < 0.5){
         flag = -1 * flag;
-      } 
+      }
 
       y += flag * 100 * 2 * random;
       if (y >= 800) {
@@ -114,7 +114,7 @@ export default class Level02 extends Phaser.Scene {
         .setSize(30, 20)
         .setDisplaySize(30, 20);
     }
-    
+
     //Add in volcano
     var volcano = this.physics.add.staticGroup()
     volcano.refresh();
@@ -147,10 +147,10 @@ export default class Level02 extends Phaser.Scene {
         }
       } else {
         if (this.win){
-          var score = this.timer.getElapsedSeconds(); 
+          var score = this.timer.getElapsedSeconds();
           this.scores[this.scores.length] = score;
         }
-      }      
+      }
       this.scene.start('GameOverScene', {score: this.scores});
       this.gameOver = true;
       return;
@@ -190,4 +190,3 @@ export default class Level02 extends Phaser.Scene {
   }
 
 }
-

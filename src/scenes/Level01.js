@@ -102,7 +102,7 @@ export default class Level01 extends Phaser.Scene {
     this.load.audio("coin", ["assets/sounds/coinCollect.ogg", "assets/sounds/coinCollect.mp3"]);
     this.load.audio("explode", ["assets/sounds/explosion.ogg", "assets/sounds/explosion.mp3"]);
     //load musics
-    this.load.audio("music", ["assets/sounds/sci-fi_platformer12.ogg", "assets/sounds/sci-fi_platormer12.mp3"]);
+    //this.load.audio("music", ["assets/sounds/sci-fi_platformer12.ogg", "assets/sounds/sci-fi_platormer12.mp3"]);
   }
 
   create (data) {
@@ -590,19 +590,19 @@ export default class Level01 extends Phaser.Scene {
     this.explodeSound = this.sound.add("explode");
 
     //create music
-    this.music = this.sound.add("music");
+    //this.music = this.sound.add("music");
 
-    var musicConfig = {
-      mute: false,
-      volume: 1,
-      rate: 1,
-      detune: 0,
-      seek: 0,
-      loop: true,
-      delay: 0
-    }
+    //var musicConfig = {
+    //  mute: false,
+    //  volume: 1,
+    //  rate: 1,
+    //  detune: 0,
+    //  seek: 0,
+    //  loop: true,
+    //  delay: 0
+  //  }
 
-    this.music.play(musicConfig);
+  //  this.music.play(musicConfig);
 
   }
 
