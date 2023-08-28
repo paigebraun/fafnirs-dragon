@@ -8,10 +8,9 @@ A 2D platform game created as part of a semester long class with two classmates.
 
 
 ## Demo
+Select 'Start' or 'Tutorial' with the up and down arrows on your keyboard and hit enter.
 
-https://paigebraun.github.io/fafnirs-dragon/
 
-Select 'Start' or 'Tutorial' and hit enter.
 ## Screenshots
 
 ![App Screenshot](Fafnir-Thumbnail.png)
